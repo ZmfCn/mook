@@ -1,0 +1,46 @@
+/*左侧菜单栏的相关设置*/
+.menuContent{
+	position: relative;
+	float: left;
+	width: 270px;
+	/*height: 444px;*/
+	z-index: 2;
+	padding-top: 12px;
+	background: bg-info;
+	border-bottom-left-radius: 10px;		
+	font-weight: 200px;
+	box-sizing: border-box;
+	}
+
+/*二级菜单的相关样式设置*/
+.submenu{
+	background-color: white;
+	text-decoration: none;
+	display: block;
+	width: 805px;
+	height: 380px;
+	position: absolute;
+	top: -8px;
+	left: 180px;
+	line-height: 1.5;
+}
+/*鼠标悬浮在初始链接上的样式设置*/
+a.init:hover{
+	display: block;
+	background-color: rgba(255,255,255,0.2);
+	border-left-style: 10px;
+	color: white;
+}
+
+/*控制块元素左右两边的间距*/
+.left-right{
+	margin: 0px 30px;
+}
+/*控制子菜单的标题位置*/
+.sub-title{
+	margin-top: 15px;
+	margin-left: 30px; 
+}
+.shadow{
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.1);
+}

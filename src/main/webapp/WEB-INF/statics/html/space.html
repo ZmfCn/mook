@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>好友列表</title>
+    <script>
+        var itemColor;
+
+        function changeColor(obj) {
+            itemColor = obj.style.backgroundColor;
+            obj.style.backgroundColor = "#c8ccc4";
+        }
+
+        function backColor(obj) {
+            obj.style.backgroundColor = itemColor;
+        }
+
+        function emptyTextArea(obj) {
+            obj.innerText = "";
+        }
+
+        function hide(obj) {
+            var children = $(obj).children();
+            var length = children.length;
+            for (var i = 0; i < length; i++) {
+                if (children[i].tagName == "IMG") {
+                    children[i].style.display = "none";
+                }
+            }
+        }
+
+        function show(obj) {
+            var children = $(obj).children();
+            var length = children.length;
+            for (var i = 0; i < length; i++) {
+                if (children[i].tagName == "IMG") {
+                    children[i].style.display = "inline";
+                }
+            }
+        }
+    </script>
+</head>
+<body style="background-color: black">
+<div style="width: 100%;height: 100%">
+    <div style="float:left;width:20%;height: 1000px">
+
+    </div>
+    <div style="float:left;background-color: transparent;: #156460;width: 200px;height: 100%" class="container">
+        <a onmouseover="changeColor(this)" onmouseout="backColor(this)" class="btn btn-default" href="#"
+           style="width: 100%;height: auto;background-color: white;margin-top: 13px">
+            添加好友
+        </a>
+        <a onmouseover="changeColor(this)" onmouseout="backColor(this)" class="btn btn-default" href="#"
+           style="width: 100%;height: auto;background-color: white">
+            修改资料
+        </a>
+        <button type="button" class="btn btn-default" data-toggle="collapse"
+                data-target="#collapsable" style="width: 100%;height: auto">
+            好友列表
+        </button>
+        <div id="collapsable" class="collapse in">
+            <ul class="list-group">
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+                <li class="list-group-item" onmouseover="changeColor(this)" onmouseout="backColor(this)">好友1</li>
+            </ul>
+        </div>
+    </div>
+    <div style="overflow: hidden">
+        <div id="log_panel" style="background-color:black;float:left;width: 70%;padding: 15px">
+            <div style="background-color:white;width:100%;border: 1px solid #aa465f;margin: 0px auto 15px;padding: 5px">
+                <form id="log" action="/log/publish" method="post">
+                    <p style="font-weight: bold">说点什么吧</p>
+                    <textarea maxlength="200" placeholder="发表说说吧"
+                              style="border: 1px solid #555555;width: 100%;height:100px; padding: 5px;"
+                              onfocus="emptyTextArea(this)" name="log_content" autofocus="autofocus">
+                    </textarea>
+                    <input type="submit" class="btn btn-default tooltip-test" value="发表" data-toggle="tooltip"
+                           title="发表日志"/>
+                </form>
+            </div>
+
+            <div style="background-color:white;width:100%;border: 1px solid #aa465f;margin: 0px auto 15px; padding: 5px">
+                <p style="margin-left: 20px">zmf<br/>2017-11-18 16:41</p>
+                <hr style="width: inherit"/>
+                <div style="width: 100%;height:auto;background-color: #eeeeee;
+                    border: 1px solid #eeeeee;word-break:break-all; word-wrap:break-word">
+                    <p>
+                        我需要三件东西：爱情友谊和图书。然而这三者之间何其相通！炽热的爱情可以充实图书的内容，图书又是人们最忠实的朋友
+                    </p>
+                </div>
+                <hr style="width: inherit"/>
+                <div>
+                    <img src="../imgs/upvote.png" style="width:20px;height: 20px;margin-right: 50px"/>
+                    <img src="../imgs/comment.png" style="width:20px;height: 20px;margin-right: 50px"/>
+                    <img src="../imgs/transmit.png" style="width:20px;height: 20px;margin-right: 50px"/>
+                </div>
+                <hr style="width: inherit"/>
+                <div style="word-break:break-all; word-wrap:break-word">
+                    <img src="../imgs/upvoteIcon.png" style="width: 20px;height: 20px">
+                    <p style="display: inline">zmf等好友点了赞</p>
+                </div>
+                <hr style="width: inherit"/>
+                <div name="comment_block" style="word-break:break-all; word-wrap:break-word">
+                    <!--data-->
+                    <div style="word-break:break-all; word-wrap:break-word" onmouseover="show(this)"
+                         onmouseout="hide(this)">
+                        <p style="display: inline">
+                            zmf:&nbsp;加油吧
+                        </p>
+                        <img class="showa" src="../imgs/comment.png"
+                             style="width:16px;height: 16px;margin-left: 10px;display: none"/>
+                        <img class="showa" src="../imgs/delete.png"
+                             style="width:16px;height: 16px;margin-left: 10px;display: none"/>
+                    </div>
+                    <hr style="width: inherit"/>
+                    <form id="comment" action="/log/publish" method="post">
+                        <div class="input-group">
+                            <input type="text" class="form-control" maxlength="200" name="comment" placeholder="说点什么吧">
+                            <span class="input-group-addon" style="padding: 0px;margin: 0px">
+                                <input type="submit" class="btn btn-default" style="padding: 0px;margin: 0px"
+                                       value="评论"/>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>管理课程</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/sider-menu.css">
+	<link rel="stylesheet" href="../styles/footer.css">
+	<link rel="stylesheet" href="../styles/course.css">
+    <link rel="SHORTCUT ICON" href="../images/favicon1.ico">
+    <link rel="stylesheet" href="../styles/edit-course.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  	<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script>
+        function valiadate(){
+            alert("确认删除选中的课程吗？");
+        }
+    </script>
+</head>
+
+<body>
+	<div class="container allContent">
+		<!--顶部导航栏的相关设置-->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top shadow">
+			<a class="navbar-brand" href="../htmls-courseManager/index.html"><strong>ICourse</strong></a>
+			
+			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+			
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<!--导航栏“所有课程”的链接-->
+					<li class="nav-item" style="margin-right: 320px;">
+						<a href="#" class="nav-link disabled">所有课程</a>
+					</li>
+					<!--导航栏的搜索框以及按钮-->
+					<form class="form-inline" style="margin-right: 60px;">
+						<input class="form-control" type="text" placeholder="搜索">
+						<button class="btn btn-success" type="button"><a href="../htmls/search.html">搜索</a></button>
+					</form>
+					
+					<!--导航栏“我的学习”的链接-->
+					<!--<li class="nav-item">
+						<a href="load.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-book"></span>我的学习</a>
+					</li>-->
+					<!--导航栏“我的消息的链接”-->
+					<!--<li class="nav-item">
+						<a href="load.html" class="nav-link" target="_blank"><span class="glyphicon glyphicon-comment"></span>我的消息</a>
+					</li>-->
+                    <!--增加课程的链接在这-->
+                    <li class="nav-item">
+						<a href="add-course.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-plus" style="color: orange;">添加课程</span>
+                        </a>
+					</li>
+					<!--修改课程的链接在这-->
+					<li class="nav-item">
+						<a href="alter-course.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-wrench" style="color: rgb(60, 228, 237);">修改课程信息</span>
+                        </a>
+					</li>
+					<!--导航栏“注册/登录的链接”-->
+					<li class="nav-item">
+						<a href="sign-in.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-user"></span>注册</a>
+					</li>
+					<li class="nav-item">
+						<a href="load.html" class="nav-link" target="_blank"><span class="glyphicon glyphicon-log-in"></span>登录</a>
+					</li>
+					<li class="nav-item">
+						<a href="../help.html" target="_blank"; class="nav-link" title="使用帮助信息">
+							<span class="glyphicon glyphicon-question-sign"></span></a>
+					</li>
+					<!--浮动着的返回顶部的按钮的设置在这-->
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+							<span  class="glyphicon glyphicon-arrow-up" style="color: blue;">回到顶部</span></a>
+					</li>
+				</ul>
+				</div>
+		</nav>
+	
+		   <div class="card" style="margin-top: 70px;">
+            <div class="card-header">
+                <h3 style="text-align: center;">删除课程</h3>
+            </div>
+            <div class="card-body">
+                <form role="form" name="form" onsubmit="return valiadate()">
+                   <div class="checkbox"> 
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-3">
+                                <label class="img--position">
+                                    <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/91779816.jpg" class="conf img-fluid" >
+                                    <input type="checkbox" name="friends1">全网最热Python3入门+进阶 更快上手实际开发
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>
+                                    <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/71802802.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends2">BAT大咖助力 全面升级Android面试
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                 <label>
+                                    <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/23370465.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends3">Get全栈技能点 Vue2.0/Node.js/MongoD
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>
+                                    <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/43759477.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends4">Spring Boot企业微信点餐系统
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-3">
+                                 <label>
+                                   <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/62773924.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends4">对接真实数据 从0开发前后端分离企业级上线项目
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                 <label>
+                                   <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/29084421.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends4">SSM到Spring Boot 从零开发校园商铺平台
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                 <label>
+                                   <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/39380250.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends4">CDN与智能DNS原理和应用
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                 <label>
+                                   <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/57339628.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends4">企业级刚需Nginx入门，全面掌握Nginx配置+快速搭
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-3">
+                                 <label>
+                                   <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/48823732.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends4">前端跳槽面试必备技巧
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                 <label>
+                                   <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/62773924.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends4">开发微信全家桶项目 Vue/Node/MongoDB高级
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                  <label>
+                                  <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/39009338.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends4">Vue.js高仿饿了么外卖App 1.0到2.0版本完美升级
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                 <label>
+                                   <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/29201324.jpg" class="conf img-fluid">
+                                    <input type="checkbox" name="friends4">bootstrap快速入门
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-danger btn-block">确认删除</button>
+                </form>
+                </div> 
+      		
+            </div>
+        
+        </div>
+	
+		<!--设置分页-->
+		<ul class="pager" style="margin-top: 20px;">
+			<li class="previous disabled"><a href="#">&larr;上一页</a></li>
+			<li class="next disabled"><a href="allCourse-second.html">下一页&rarr;</a></li>
+		</ul>
+	
+	
+	<!--底部栏的设置在这-->
+	<div class="return">
+	<a href="#" style="color: white;font-size: 15px;">回到顶部</a>
+	</div>
+	<footer class="position">
+		<address>
+		Copyright © 2017 郑膜坊，何志颖，王秋莉  <br>联系邮箱：2804755011@qq.com 地址：云南大学软件学院
+		</address>
+	</footer>
+	
+</body>
+</html>

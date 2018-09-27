@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>所有课程</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/sider-menu.css">
+	<link rel="stylesheet" href="../styles/footer.css">
+	<link rel="stylesheet" href="../styles/course.css">
+     <link rel="SHORTCUT ICON" href="../images/favicon1.ico">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  	<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		/*冻结布局*/
+		.allContent{
+			width: 1500px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	    /*控制轮播图片的自适应性*/
+		.carousel-inner img{
+			width: auto;
+			height: auto;
+		}
+		/*设置边框为圆角*/
+		.border-radius{
+			border-radius: 20px;
+		}
+		span{
+			margin-right: 5px;
+		}
+		/*鼠标悬浮在链接上时，改变样式*/
+		a:hover{
+			color: red;
+			text-decoration: none;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div class="container allContent">
+		<!--顶部导航栏的相关设置-->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top shadow">
+			<a class="navbar-brand" href="../htmls-systemManager/index.html"><strong>ICourse</strong></a>
+			
+			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+			
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<!--导航栏“所有课程”的链接-->
+					<li class="nav-item" style="margin-right: 200px;">
+						<a href="#" class="nav-link disabled">所有课程</a>
+					</li>
+					<!--导航栏的搜索框以及按钮-->
+					<form class="form-inline">
+						<input class="form-control" type="text" placeholder="搜索">
+						<button class="btn btn-success" type="button"><a href="../htmls/search.html">搜索</a></button>
+					</form>
+					
+
+                  <!--关键字管理-->
+                   <li class="nav-item">
+                        <a href="edit-keywords.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-bookmark"></span>关键字管理</a>
+					</li>
+                   <!--审核用户评论管理-->
+					  <!--导航栏中的审核用户评论的链接的设置在这-->
+                    <li class="nav-item">
+                        <a href="review-comments.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-th"></span>审核用户评论</a>
+					</li>
+					
+					<!--导航栏“我的学习”的链接-->
+					<!--<li class="nav-item">
+						<a href="load.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-book"></span>我的学习</a>
+					</li>-->
+					<!--导航栏“我的消息的链接”-->
+					<!--<li class="nav-item">
+						<a href="load.html" class="nav-link" target="_blank"><span class="glyphicon glyphicon-comment"></span>我的消息</a>
+					</li>-->
+                    
+                    <li class="nav-item">
+                        <a href="edit-course-kind.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-edit"></span>管理课程类型</a>
+					</li>
+                    
+                    <li class="nav-item">
+                        <a href="edit-user-root.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-certificate"></span>管理用户权限</a>
+					</li>
+                    
+					<!--导航栏“注册/登录的链接”-->
+					<li class="nav-item">
+						<a href="sign-in.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-user"></span>注册</a>
+					</li>
+					<li class="nav-item">
+						<a href="load.html" class="nav-link" target="_blank"><span class="glyphicon glyphicon-log-in"></span>登录</a>
+					</li>
+					<li class="nav-item">
+						<a href="../help.html" target="_blank"; class="nav-link" title="使用帮助信息">
+							<span class="glyphicon glyphicon-question-sign"></span></a>
+					</li>
+					<!--浮动着的返回顶部的按钮的设置在这-->
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+							<span  class="glyphicon glyphicon-arrow-up" style="color: blue;">回到顶部</span></a>
+					</li>
+				</ul>
+				</div>
+		</nav>
+		
+		<!--整个菜单栏的设置-->
+		<div class="row bg-dark shadow border-radius" style="margin-top: 90px;margin-bottom: 90px;">
+
+			<!--轮播图片的设置-->
+			<!--指示符-->
+			<div class="carousel slide col-sm-12;" id="images" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#images" data-slide-to="0" class="active"></li>
+					<li data-target="#images" data-slide-to="1"></li>
+					<li data-target="#images" data-slide-to="2"></li>
+					<li data-target="#images" data-slide-to="3"></li>
+					<li data-target="#images" data-slide-to="4"></li>
+					<li data-target="#images" data-slide-to="5"></li>
+				</ul>
+
+				<!--轮播图片-->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<a href="#">
+							<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-19/22894757.jpg">
+							<div class="carousel-caption">
+								<h3>图一标题</h3>
+								<p>描述文字</p>
+							</div>
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-19/15681981.jpg">
+							<div class="carousel-caption">
+								<h3>图二标题</h3>
+								<p>描述文字</p>
+							</div>
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-19/97040192.jpg">
+							<div class="carousel-caption">
+								<h3>图三标题</h3>
+								<p>描述文字</p>
+							</div>
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-19/8114822.jpg">
+							<div class="carousel-caption">
+								<h3>图四标题</h3>
+								<p>描述文字</p>
+							</div>
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-19/53430078.jpg">
+							<div class="carousel-caption">
+								<h3>图五标题</h3>
+								<p>描述文字</p>
+							</div>
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-19/4719404.jpg">
+							<div class="carousel-caption">
+								<h3>图六标题</h3>
+								<p>描述文字</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!--左右切换按钮-->
+				<a class="carousel-control-prev" href="#images" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#images" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+		
+		<!--实战推荐的设置在这-->
+		<!--<h3 class="type-title">
+				<span class="glyphicon glyphicon-tree-conifer" style="color: rgb(255, 140, 60);"></span><em>实</em>/<em>战</em>/<em>推</em>/荐<span class="glyphicon glyphicon-tree-conifer" style="color: rgb(255, 140, 60);"></span>
+		</h3>-->
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-sm-3">
+				<a href="shizhan/shizhan1-python/shizhan1-python.html">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/91779816.jpg" class="conf img-fluid" >
+					全网最热Python3入门+进阶 更快上手实际开发
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/71802802.jpg" class="conf img-fluid">
+					BAT大咖助力 全面升级Android面试
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/23370465.jpg" class="conf img-fluid">
+					Get全栈技能点 Vue2.0/Node.js/MongoD
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/62773924.jpg" class="conf img-fluid">
+				Spring Boot企业微信点餐系统
+				</a>
+			</div>
+		</div>
+		
+		<!--新上好课的设置在这-->
+		<!--<h3 class="type-title">
+				<span class="glyphicon glyphicon-leaf" style="color: rgb(255, 200, 234);"></span><em>新</em>/<em>上</em>/<em>好</em>/课<span class="glyphicon glyphicon-leaf" style="color: rgb(255, 200, 234); "></span>
+		</h3>-->
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/43759477.jpg" class="conf img-fluid">
+					对接真实数据 从0开发前后端分离企业级上线项目
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/29084421.jpg" class="conf img-fluid">
+					SSM到Spring Boot 从零开发校园商铺平台
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#">
+						<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/39380250.jpg" class="conf img-fluid">
+						CDN与智能DNS原理和应用
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/57339628.jpg" class="conf img-fluid">
+					企业级刚需Nginx入门，全面掌握Nginx配置+快速搭
+				</a>
+			</div>
+		</div>
+		
+		<!--技能提升的设置在这-->
+		<!--<h3 class="type-title">
+				<span class="glyphicon glyphicon-send" style="color: rgb(75, 177, 246);"></span><em>技</em>/<em>能</em>/<em>提</em>/升<span class="glyphicon glyphicon-send" style="color: rgb(75, 177, 246); "></span>
+		</h3>-->
+		<div class="row">
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/16401713.jpg" class="conf img-fluid">
+					前端跳槽面试必备技巧
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/48823732.jpg" class="conf img-fluid">
+					开发微信全家桶项目 Vue/Node/MongoDB高级
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/39009338.jpg" class="conf img-fluid">
+					Vue.js高仿饿了么外卖App 1.0到2.0版本完美升级
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/29201324.jpg" class="conf img-fluid">
+					bootstrap快速入门
+				</a>
+			</div>
+		</div>
+	
+		<!--设置分页-->
+		<ul class="pager" style="margin-top: 20px;">
+			<li class="previous disabled"><a href="#">&larr;上一页</a></li>
+			<li class="next"><a href="allCourse-second.html">下一页&rarr;</a></li>
+		</ul>
+	</div>
+	
+	<!--底部栏的设置在这-->
+	<div class="return">
+	<a href="#" style="color: white;font-size: 15px;">回到顶部</a>
+	</div>
+	<footer class="position">
+		<address>
+		Copyright © 2017 郑膜坊，何志颖，王秋莉  <br>联系邮箱：2804755011@qq.com 地址：云南大学软件学院
+		</address>
+	</footer>
+	
+</body>
+</html>

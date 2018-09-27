@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>审核用户评论</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../styles/sider-menu.css">
+    <link rel="stylesheet" href="../../../styles/footer.css">
+    <link rel="stylesheet" href="../../../styles/course.css">
+    <link rel="stylesheet" href="../../../styles/catalogue.css">
+    <link rel="SHORTCUT ICON" href="../../../images/favicon1.ico">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../../styles/mystdy-msg.css">
+</head>
+
+<body>
+<div class="container allContent">
+    <!--顶部导航栏的相关设置-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top shadow">
+        <a class="navbar-brand" href="../../../htmls-systemManager/index.html"><strong>ICourse</strong></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <!--导航栏“所有课程”的链接-->
+                <li class="nav-item" style="margin-right: 200px;">
+                    <a href="../htmls-systemManager/allCourse.html" class="nav-link">所有课程</a>
+                </li>
+                <!--导航栏的搜索框以及按钮-->
+                <form class="form-inline">
+                    <input class="form-control" type="text" placeholder="搜索">
+                    <button class="btn btn-success" type="button"><a href="../htmls/search.html">搜索</a></button>
+                </form>
+
+
+                <!--关键字管理-->
+                <li class="nav-item">
+                    <a href="edit-keywords.html" class="nav-link" target="_blank">
+                        <span class="glyphicon glyphicon-bookmark"></span>关键字管理</a>
+                </li>
+                <!--审核用户评论管理-->
+                <!--导航栏中的审核用户评论的链接的设置在这-->
+                <li class="nav-item">
+                    <a href="review-comments.html" class="nav-link" target="_blank">
+                        <span class="glyphicon glyphicon-th"></span>审核用户评论</a>
+                </li>
+                <li class="nav-item">
+                    <a href="edit-course-kind.html" class="nav-link" target="_blank">
+                        <span class="glyphicon glyphicon-edit"></span>管理课程类型</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="edit-user-root.html" class="nav-link" target="_blank">
+                        <span class="glyphicon glyphicon-certificate"></span>管理用户权限</a>
+                </li>
+
+
+                <!--导航栏“注册/登录的链接”-->
+                <li class="nav-item">
+                    <a href="../htmls/sign-in.html" class="nav-link" target="_blank">
+                        <span class="glyphicon glyphicon-user" target="_blank"></span>注册</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../htmls/load.html" class="nav-link" target="_blank"><span
+                            class="glyphicon glyphicon-log-in"></span>登录</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../help.html" target="_blank" ; class="nav-link" title="使用帮助信息">
+                        <span class="glyphicon glyphicon-question-sign"></span></a>
+                </li>
+                <!--浮动着的返回顶部的按钮的设置在这-->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="glyphicon glyphicon-arrow-up" style="color: blue;">回到顶部</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="card">
+        <div class="card-header" style="margin-top: 50px;text-align: center;">
+            <h1>审核用户评论</h1>
+        </div>
+        <div class="card-body title"
+             style="border-style: groove;margin: 5px;border-color: lightskyblue;border-width: 1px;">
+
+            <!--表单设置在这-->
+            <form>
+                <div class="comments">
+                    <!--设置用户名-->
+                    <p style="color: dodgerblue;">
+                        user_1
+                        <!--设置讨论时间-->
+                        <span class="float-right" style="color: lightblue">2017-11-30</span>
+                    </p>
+                    <!--设置评论内容-->
+                    <p>这是评论内容</p>
+                    <!--通过和禁止按钮的设置在这-->
+                    <span>
+                        <input type="radio" name="radio-1">通过
+                    </span>
+                    <span class="float-right">
+                        <input type="radio" name="radio-1">禁止
+                    </span>
+                </div>
+                <br>
+
+                <div class="comments">
+                    <!--设置用户名-->
+                    <p style="color: dodgerblue;">
+                        user_2
+                        <!--设置讨论时间-->
+                        <span class="float-right" style="color: lightblue">2017-11-30</span>
+                    </p>
+                    <!--设置评论内容-->
+                    <p>这是评论内容</p>
+                    <!--通过和禁止按钮的设置在这-->
+                    <span>
+                        <input type="radio" name="radio-2">通过
+                    </span>
+                    <span class="float-right">
+                        <input type="radio" name="radio-2">禁止
+                    </span>
+                </div>
+                <br>
+                <!--后续的评论内容放在这-->
+
+
+                <hr>
+                <!--提交按钮以及重置按钮的设置在这-->
+                <input type="submit" class="btn btn-primary">
+                <input type="reset" class="btn btn-warning float-right">
+            </form>
+        </div>
+    </div>
+
+</div>
+<!--底部栏的设置在这-->
+<div class="return">
+    <a href="#" style="color: white;font-size: 15px;">回到顶部</a>
+</div>
+<footer class="position">
+    <address>
+        Copyright © 2017 郑膜坊，何志颖，王秋莉 <br>联系邮箱：2804755011@qq.com 地址：云南大学软件学院
+    </address>
+</footer>
+
+</body>
+</html>

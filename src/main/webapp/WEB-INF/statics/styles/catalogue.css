@@ -1,0 +1,20 @@
+.course-menu{
+	background-color: rgba(152, 182, 228,0.2);
+	width: 1110px;
+	margin-left: 15px;
+}
+
+.course-introduce{
+	display: block;
+	background-color:  rgba(229, 229, 228,0.2);
+	width: auto;
+	height: auto;
+	margin-bottom: 30px;
+}
+.title{
+	line-height: 2.5;
+}
+.course-asider{
+	display: block;
+	background-color: rgba(152, 182, 228,0.2);
+}

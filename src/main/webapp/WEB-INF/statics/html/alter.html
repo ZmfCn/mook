@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>修改资料</title>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="font-size: 40px">Web</a>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                <!--<c:if test='${pageContext.session.getAttribute("username")!=null}'>
+                    <li><a href="/logout">登出</a></li>
+                    <li><a href="/logout">登出</a></li>
+                </c:if>
+                <c:if test='${pageContext.session.getAttribute("username")==null}'>
+                    <li><a href="/login">登录</a></li>
+                </c:if>-->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        模块
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">我们的作业</a></li>
+                        <li><a href="#">问卷调查</a></li>
+                        <li><a href="/log/">日志分享</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container col-lg-4 col-lg-offset-3">
+    <div class="page-header">
+        <h1>修改资料</h1>
+    </div>
+    <div>
+        <form action="/user//update" method="post">
+            <div class="input-group">
+                <span class="input-group-addon" style="font-weight: bold">昵称/用户名</span>
+                <input name="username" type="text" class="form-control" placeholder="用户名" }>
+            </div>
+            <br/>
+            <br/>
+            <div class="input-group">
+                <span class="input-group-addon" style="font-weight: bold">性别</span>
+                <select name="gender" class="form-control">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                </select>
+            </div>
+            <br/>
+            <br/>
+            <div class="input-group">
+                <span class="input-group-addon" style="font-weight: bold">出生日期</span>
+                <input name="birthday" type="date" class="form-control" value="2015-09-24"/>
+            </div>
+            <br/>
+            <br/>
+            <input type="submit" class="btn btn-default" value="提交"/>
+        </form>
+    </div>
+</div>
+</body>
+</html>

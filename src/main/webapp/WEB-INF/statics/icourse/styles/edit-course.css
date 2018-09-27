@@ -1,0 +1,10 @@
+/*增删课程的样式设置在这*/
+/*设置删除图标的样式及位置*/
+.span--delete{
+    color: rgb(237, 38, 38);
+}
+.span--position{
+    position: absolute;
+    top:5%;
+    left: 80%;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>搜索-爱课程</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/sider-menu.css">
+	<link rel="stylesheet" href="../styles/footer.css">
+	<link rel="stylesheet" href="../styles/course.css">
+     <link rel="SHORTCUT ICON" href="../images/favicon1.ico">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  	<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		/*冻结布局*/
+		.allContent{
+			width: 1500px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	    /*控制轮播图片的自适应性*/
+		.carousel-inner img{
+			width: auto;
+			height: auto;
+		}
+		/*设置边框为圆角*/
+		.border-radius{
+			border-radius: 20px;
+		}
+		span{
+			margin-right: 5px;
+		}
+		/*鼠标悬浮在链接上时，改变样式*/
+		a:hover{
+			color: red;
+			text-decoration: none;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div class="container allContent">
+		<!--顶部导航栏的相关设置-->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top shadow">
+			<a class="navbar-brand" href="../index.html"><strong>ICourse</strong></a>
+			
+			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+			
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<!--导航栏“所有课程”的链接-->
+					<li class="nav-item" style="margin-right: 320px;">
+						<a href="#" class="nav-link disabled">所有课程</a>
+					</li>
+					<!--导航栏的搜索框以及按钮-->
+					<form class="form-inline" style="margin-right: 60px;">
+						<input class="form-control" type="text" placeholder="搜索">
+						<button class="btn btn-success" type="button"><a href="#" style="text-decoration: none;">搜索</a></button>
+					</form>
+					
+					<!--导航栏“我的学习”的链接-->
+					<li class="nav-item">
+						<a href="load.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-book"></span>我的学习</a>
+					</li>
+					<!--导航栏“我的消息的链接”-->
+					<li class="nav-item">
+						<a href="load.html" class="nav-link" target="_blank"><span class="glyphicon glyphicon-comment"></span>我的消息</a>
+					</li>
+					<!--导航栏“注册/登录的链接”-->
+					<li class="nav-item">
+						<a href="sign-in.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-user"></span>注册</a>
+					</li>
+					<li class="nav-item">
+						<a href="load.html" class="nav-link" target="_blank"><span class="glyphicon glyphicon-log-in"></span>登录</a>
+					</li>
+					  <li class="nav-item">
+						<a href="../help.html" target="_blank"; class="nav-link" title="使用帮助信息">
+							<span class="glyphicon glyphicon-question-sign"></span></a>
+					</li>
+					<!--浮动着的返回顶部的按钮的设置在这-->
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+							<span  class="glyphicon glyphicon-arrow-up" style="color: blue;">回到顶部</span></a>
+					</li>
+				</ul>
+				</div>
+		</nav>
+		
+		<!--搜索导航栏在这-->
+		<ol class="breadcrumb" style="margin-top: 70px; ">
+			<li><a href="../index.html">首页
+			</a>
+			</li>
+			<li><a href="../htmls/allCourse.html">所有课程</a>
+			</li>
+			<li><a href="#">搜索结果
+				</a>
+			</li>
+		</ol>
+
+        <!--显示共有多少门包含搜索关键字的课程，其中两个<b>标签中的东西是需要后台填进去的-->
+        <p style="margin-top: 40px;margin-bottom: 40px;">共有<b>1</b>门包含“<b>js</b>”的课程</p>
+        
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-sm-3">
+				<a href="#">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/44287802.jpg" class="conf" >
+					全网最热Python3入门+进阶 更快上手实际开发
+				</a>
+			</div>
+		</div>
+		
+	
+		<div>
+			<!--设置分页-->
+			<ul class="pager" style="margin-top: 20px;">
+				<li class="previous disabled"><a href="allCourse.html">&larr;上一页</a></li>
+				<li class="next  disabled"><a hre="#">下一页&rarr;</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--底部栏的设置在这-->
+	<div class="return">
+	<a href="#" style="color: white;font-size: 15px;">回到顶部</a>
+	</div>
+	<footer class="position">
+		<address>
+		Copyright © 2017 郑膜坊，何志颖，王秋莉  <br>联系邮箱：2804755011@qq.com 地址：云南大学软件学院
+		</address>
+	</footer>
+	
+</body>
+</html>

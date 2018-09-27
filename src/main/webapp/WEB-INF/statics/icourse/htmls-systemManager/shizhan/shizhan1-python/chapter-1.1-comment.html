@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>讨论区(全网最热Python3入门+进阶)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../styles/sider-menu.css">
+	<link rel="stylesheet" href="../../../styles/footer.css">
+	<link rel="stylesheet" href="../../../styles/course.css">
+    <link rel="stylesheet" href="../../../styles/video.css">
+     <link rel="SHORTCUT ICON" href="../../../images/favicon1.ico">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  	<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../../../scripts/comment.js"></script>
+</head>
+<body>
+    <h4>综合讨论区</h4>
+    <div class="form-group" style="z-index: 5">
+        <input type="text" class="form-control" id="comment" placeholder="请在此输入您的评论，请注意文明用语！">
+        <button type="button" class="btn btn-primary" style="margin-left: 120px;margin-top: 10px;">发起讨论</button>
+    </div>
+    <div class="comment">
+        <div><span class="glyphicon glyphicon-user" style="color: rgb(142, 174, 237);"></span>用户1</div>
+        <p>hello world!</p>
+        <img class="showa" src="http://ozkbl6lk3.bkt.clouddn.com/17-12-11/95842344.jpg"
+                                     style="width:16px;height: 16px;margin-left: 10px;" onclick="return showorHide('reply1')"/>
+                    <img class="showa" src="http://ozkbl6lk3.bkt.clouddn.com/17-12-11/40666551.jpg"
+                                     style="width:16px;height: 16px;margin-left: 10px;"  onclick="return validateDel()"/>
+                                     <!--回复表单的设置在这-->
+                        <div id="reply1" style="margin-top:20px;display: none;">
+                            <form id="comment" action="/log/publish" method="post">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" maxlength="200" name="comment" placeholder="回复他/她点什么吧">
+                                    <span class="input-group-addon" style="padding: 0px;margin: 0px">
+                                        <input type="submit" class="btn btn-default" style="padding: 0px;margin: 0px"
+                                                       value="回复"/>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    <hr>
+                    <!--下一个人的评论写在这-->
+    </div>
+</body>
+</html>

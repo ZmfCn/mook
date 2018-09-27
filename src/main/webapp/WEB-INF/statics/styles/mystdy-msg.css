@@ -1,0 +1,26 @@
+/*设置学习时间的位置及颜色*/
+.time--study{
+    color: greenyellow; 
+    position: absolute;
+    left: 62%;
+    top: 10%
+}
+/*设置我的消息的时间*/
+.time--msg{
+    color: lightblue;
+}
+/*设置标题居中*/
+.title--center{
+    text-align: center;
+}
+/*设置整体样式*/
+.allcontent{
+    margin-top: 5%; 
+    display: block;
+    background-color: white;
+    box-shadow: 8px 5px 5px rgba(0,0,0,0.5);
+}
+/*设置页面背景颜色*/
+.bg-color{
+    background-color: rgba(137, 161, 245,0.3);
+}

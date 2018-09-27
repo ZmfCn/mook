@@ -1,0 +1,43 @@
+/*设置整个页面为冻结布局*/
+/*body{
+    width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+/*设置视频区整体的背景颜色*/
+.bg{
+    background-color: rgba(142, 174, 237,0.3);
+    width: 1300px;
+}
+/*设置视频的样式在这*/
+.video{
+    display: block;
+    background-color: black;
+    padding: 0 70px;
+    position: relative;
+    left: 5%;
+    right: 7%;
+}
+/*返回首页的链接的设置在这*/
+.back{
+    display: inline-block;
+    background-color: rgba(255,255,255,0.5);
+    margin-top: 20px;
+    padding: 5px;
+    box-shadow: 2px 3px 5px black;
+}
+/*视频标题的设置在这*/
+.title{
+    color: white;
+    text-shadow: 5px 3px 5px black;
+}
+
+/*设置侧边栏的样式在这*/
+.div__aside{
+    display: block;
+    z-index: 5;
+    height: 90px;
+    background-color: rgba(102,102,102,0.5);
+    padding-top: 10px;
+    padding-right: 5px;
+}

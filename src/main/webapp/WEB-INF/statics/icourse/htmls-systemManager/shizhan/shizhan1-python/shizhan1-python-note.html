@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>全网最热Python3入门+进阶（笔记列表）</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../styles/sider-menu.css">
+	<link rel="stylesheet" href="../../../styles/footer.css">
+	<link rel="stylesheet" href="../../../styles/course.css">
+	<link rel="stylesheet" href="../../../styles/catalogue.css">
+     <link rel="SHORTCUT ICON" href="../../../images/favicon1.ico">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  	<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		/*冻结布局*/
+		.allContent{
+			width: 1500px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	    /*控制轮播图片的自适应性*/
+		.carousel-inner img{
+			width: auto;
+			height: auto;
+		}
+		/*设置边框为圆角*/
+		.border-radius{
+			border-radius: 20px;
+		}
+		span{
+			margin-right: 5px;
+		}
+		/*鼠标悬浮在链接上时，改变样式*/
+		a:hover{
+			color: red;
+			text-decoration: none;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div class="container allContent">
+		<!--顶部导航栏的相关设置-->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top shadow">
+			<a class="navbar-brand" href="../../../htmls-systemManager/index.html"><strong>ICourse</strong></a>
+			
+			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+			
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<!--导航栏“所有课程”的链接-->
+					<li class="nav-item" style="margin-right: 180px;">
+						<a href="../../allCourse.html" class="nav-link">所有课程</a>
+					</li>
+					<!--导航栏的搜索框以及按钮-->
+					<form class="form-inline" style="margin-right: 20px;">
+						<input class="form-control" type="text" placeholder="搜索">
+						<button class="btn btn-success" type="button"><a href="../../../htmls/search.html">搜索</a></button>
+					</form>
+					     <!--关键字管理-->
+                   <li class="nav-item">
+                        <a href="../../edit-keywords.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-bookmark"></span>关键字管理</a>
+					</li>
+					  <!--导航栏中的审核用户评论的链接的设置在这-->
+                    <li class="nav-item">
+                        <a href="review-comments.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-th"></span>审核用户评论</a>
+					</li>
+					
+					<!--导航栏“我的学习”的链接-->
+					<!--<li class="nav-item">
+						<a href="../../load.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-book"></span>我的学习</a>
+					</li>-->
+					<!--导航栏“我的消息的链接”-->
+					<!--<li class="nav-item">
+						<a href="../../load.html" class="nav-link" target="_blank"><span class="glyphicon glyphicon-comment"></span>我的消息</a>
+					</li>-->
+                    
+                      <li class="nav-item">
+                        <a href="edit-course.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-edit"></span>管理课程类型</a>
+					</li>
+                    
+                    <li class="nav-item">
+                        <a href="edit-course.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-certificate"></span>管理用户权限</a>
+					</li>
+                    
+                    
+					<!--导航栏“注册/登录的链接”-->
+					<li class="nav-item">
+						<a href="../../sign-in.html" class="nav-link" target="_blank">
+							<span class="glyphicon glyphicon-user" target="_blank"></span>注册</a>
+					</li>
+					<li class="nav-item">
+						<a href="../../load.html" class="nav-link" target="_blank"><span class="glyphicon glyphicon-log-in"></span>登录</a>
+					</li>
+					<li class="nav-item">
+						<a href="../../../help.html" target="_blank"; class="nav-link" title="使用帮助信息">
+							<span class="glyphicon glyphicon-question-sign"></span></a>
+					</li>
+					<!--浮动着的返回顶部的按钮的设置在这-->
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+							<span  class="glyphicon glyphicon-arrow-up" style="color: blue;">回到顶部</span></a>
+					</li>
+				</ul>
+				</div>
+		</nav>
+		
+		<!--课程导航栏在这-->
+		<ol class="breadcrumb" style="margin-top: 70px; ">
+			<li><a href="../../../index.html">首页
+			</a>
+			</li>
+			<li><a href="../../allCourse.html">所有课程</a>
+			</li>
+			<li><a href="#">课程详情
+				</a>
+			</li>
+		</ol>
+
+		<!--课程简介在这-->
+		<div class="course-introduce">
+			<div class="row">
+				<div class="col-sm-5">
+					<img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-21/91779816.jpg" alt="全网最热Python3入门+进阶" class="img-responsive img-rounded">
+				</div>
+				<div class="col-sm-7">
+					<h3>全网最热Python3入门+进阶</h3>
+					<p>讲师：七月</p>
+					<p>Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。
+						Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，它具有比其他语言更有特色语法结构。</p>
+					<br>
+					<br>
+					<button type="button" class="btn btn-warning btn-lg"><a href="shizhan1-python-copy.html">加入学习</a></button> 
+				</div>
+				<ul class="nav nav-pills course-menu">
+					<li class="active">
+						<a href="shizhan1-python.html">主页</a>
+					</li>
+					<li>
+						<a href="shizhan1-python-note.html">笔记</a>
+					</li>
+					<li>
+						<a href="shizhan1-python-forum.html">讨论区</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--笔记设置在这-->
+		<div class="row">
+			<div class="col-sm-9 card">
+				<div class="card-header">
+					<h2>笔记</h2>
+				</div>
+				<div class="card-bod">
+                     <!--笔记框的设置在这-->
+                    <div class="form-group" style="z-index: 5">
+                        <input type="textArea" class="form-control" id="comment" placeholder="好记性不如烂笔头哦！">
+                        <button type="button" class="btn btn-primary float-right" style="margin-top: 10px;">留下笔记</button>
+                    </div>
+					<!--笔记的内容写在这-->
+				    <hr style="margin-top: 55px;">
+                    <span class="float-left">
+                        <!--设置用户头像-->
+                        <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-30/57758329.jpg" width="64px" height="64px" alt="用户头像">
+                    </span>
+                    <!--设置用户名-->
+                    <p style="color: dodgerblue;">
+                        user_1
+                        <!--设置笔记时间-->
+                        <span class="float-right" style="color: lightblue">2017-11-30</span>
+                    </p>
+                    <!--设置笔记内容-->
+                    <p>笔记一</p>
+                    <hr>
+				</div>
+<!--			<div class="card-footer">
+				
+				</div>-->
+			</div>
+			<div class="col-sm-3 course-asider shadow">
+				<h4 style="text-align: center;">评价</h4>
+                <!--评价框的设置在这-->
+                <div class="form-group" style="z-index: 5">
+                    <input type="textArea" class="form-control" id="comment" placeholder="请在此输入您的评价，请文明用语！">
+                    <button type="button" class="btn btn-primary float-right" style="margin-top: 10px;">留下评价</button>
+                </div>
+				<div style="display: block;background-color: white;margin: 5px;border-style:groove;margin-top: 50px;">
+					<!--评价设置在这-->
+                     <span class="float-left">
+                        <!--设置用户头像-->
+                        <img src="http://ozkbl6lk3.bkt.clouddn.com/17-11-30/35218119.jpg" width="32px" height="32px" alt="用户头像">
+                    </span>
+                    <!--设置用户名-->
+                    <p style="color: dodgerblue;">
+                        user_1
+                        <!--设置讨论时间-->
+                        <span class="float-right" style="color: lightblue">2017-11-30</span>
+                    </p>
+                    <!--设置讨论内容-->
+                    <p>评价一</p>
+                    <hr>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!--底部栏的设置在这-->
+	<div class="return">
+	<a href="#" style="color: white;font-size: 15px;">回到顶部</a>
+	</div>
+	<footer class="position">
+		<address>
+		Copyright © 2017 郑膜坊，何志颖，王秋莉  <br>联系邮箱：2804755011@qq.com 地址：云南大学软件学院
+		</address>
+	</footer>
+	
+</body>
+</html>

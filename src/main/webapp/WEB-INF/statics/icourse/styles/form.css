@@ -1,0 +1,22 @@
+.form-style{
+			width: 350px;
+			height: 350px;
+			background-color: white;
+			display: block;
+			position: relative;
+			margin-top: 100px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 10px;
+			padding-left: 15px;
+			padding-right: 15px;
+}
+body{
+		background-color: rgba(100,100,255,0.2);
+}
+.bg{
+        background-color: rgba(100,100,255,0.2);
+}
+.label-position{
+    margin-top: 5px;
+}

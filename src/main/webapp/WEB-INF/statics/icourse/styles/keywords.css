@@ -1,0 +1,51 @@
+/*关键字的样式设计在这*/
+.style1{
+    color: red;
+    font-size: 50px;
+    font-family: 宋体;
+}
+.style2{
+    color: yellow;
+    font-family: monospace;
+    font-size: 60px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.style3{
+    color: coral;
+    font-family: serif;
+    font-size: 50px;
+    margin-left: 50px;
+}
+.style4{
+    color: mediumslateblue;
+    font-family: 楷体;
+    font-size: 70px;
+    margin-left: 20px;
+    color: greenyellow;
+}
+.style5{
+    color: palevioletred;
+    font-size: 40px;
+    text-align: center;
+}
+.style6{
+    color: lightskyblue;
+    font-family: monospace;
+    font-size: 60px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.style7{
+    color: darkviolet;
+    font-family： 黑体;
+    font-size: 50px;
+    margin-left: 50px;
+}
+.keywords{
+    border-style: groove;
+    border-width: 2px;
+    background-color: rgba(220, 228, 237,0.3);
+    padding: 5px;
+    text-align: center;
+}

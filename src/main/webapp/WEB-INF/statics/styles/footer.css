@@ -1,0 +1,15 @@
+.return{
+	background-color: darkgrey;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.position{
+	background-color: rgb(204,204,204);
+	margin-top: 3px;
+	width: auto;
+	height: 80px;
+	padding-top: 20px;
+	text-align: center;
+	color: white;
+}

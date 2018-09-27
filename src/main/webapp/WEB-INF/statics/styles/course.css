@@ -1,0 +1,66 @@
+/*冻结布局*/
+.allContent{
+    width: 1500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*控制轮播图片的自适应性*/
+.carousel-inner img{
+    width: auto;
+    height: auto;
+}
+/*设置边框为圆角*/
+.border-radius{
+    border-radius: 20px;
+}
+span{
+    margin-right: 5px;
+}
+/*鼠标悬浮在链接上时，改变样式*/
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+.type-title{
+	position: relative;
+	font-size: 20px;
+	color: darkgrey;
+	letter-spacing: 6px;
+	line-height: 36px;
+}
+h3{
+	font-weight: 400;
+	text-align: center;
+}
+/*课程图片的相关设置*/
+img.conf{
+	width: 240px;
+	height: 135px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+}
+img.conf:hover{
+	width: 241px;
+	height: 136px;
+}
+/*对评论区的设置在这*/
+.comment{
+    background-color: rgba(142, 174, 237,0.3);
+    padding: 5px 5px;
+}
+/*设置评论的时间的样式*/
+.time--comment{
+    color: lightblue;
+}
+/*设置评论区的内部样式*/
+.comment__inner{
+    display: block;
+    background-color: white;
+    margin: 5px;
+    border-style:groove;
+}
+/*设置视频时长的样式*/
+.time--video{
+    color: rgb(79, 184, 232);
+}
